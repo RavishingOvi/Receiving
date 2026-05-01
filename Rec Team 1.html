@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receiving Team Dashboard</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: #ff7a00;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Subheader */
+.subheader {
+    text-align: center;
+    padding: 15px;
+    background: #1a1a1a;
+    font-size: 20px;
+    border-bottom: 2px solid #ff7a00;
+}
+
+/* Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Cards */
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #ff7a00;
+}
+
+/* Function Box */
+.function-box {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Steps */
+.steps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.steps li {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #262626;
+    border-radius: 6px;
+    border-left: 4px solid #ff7a00;
+}
+
+/* Analytics Boxes */
+.analytics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top: 4px solid #ff7a00;
+}
+
+.stat h3 {
+    margin: 0;
+    color: #ff7a00;
+}
+
+    .alert-bar {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 40px 5%;
+            margin-top: 40px;
+        }
+        .alert-content {
+            border: 3px solid var(--orange);
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .alert-icon { font-size: 2rem; color: var(--orange); }
+
+.step-card{
+
+color:whitesmoke; 
+font-size: 14px;
+font-family: Arial, sans-serif;
+font-weight: normal;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    margin-top: 20px;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    Receiving Team
+</header>
+
+<div class="subheader">
+    Major Function: Receives Shipment from Outbound and VDO
+</div>
+
+<div class="container">
+
+    <!-- Left: Function -->
+    <div class="card function-box">
+        Receiving Operations
+        <p style="font-size:16px; font-weight:normal; margin-top:10px;">
+            Handling inbound shipments with accuracy and efficiency
+        </p>
+        <div class="workflow-container">
+        <div class="step-card">
+            <span class="step-number">01</span>
+            <p style="color:#ff7a00;">Shipment Intake</p>
+            <p>Receives shipment from Outbound and VDO channels.</p>
+        </div>
+        <div class="step-card">
+            <span class="step-number">02</span>
+            <h3 style="color:#ff7a00;">DA Reconciliation</h3>
+            <p>Verification and reconciliation from DA (FMH) systems.</p>
+        </div>
+        <div class="step-card">
+            <span class="step-number">03</span>
+            <h3 style="color:#ff7a00;">Bay Scanning</h3>
+            <p>Physical scan and verification of large items directly from the bay.</p>
+        </div>
+        <div class="step-card">
+            <span class="step-number">04</span>
+            <h3 style="color:#ff7a00;">HMT Receiving</h3>
+            <p>Formal system receiving using Handheld Mobile Terminals.</p>
+        </div>
+        <div class="step-card">
+            <span class="step-number">05</span>
+            <h3 style="color:#ff7a00;">Tier Sorting</h3>
+            <p>Pre-sorting items based on designated Tiers for efficiency.</p>
+        </div>
+        <div class="step-card">
+            <span class="step-number">06</span>
+            <h3 style="color:#ff7a00;">Team Handover</h3>
+            <p>Final handover to the sorting team for processing.</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Right: Steps -->
+    <div class="card steps">
+        <h2 style="color:#ff7a00;">Process Steps</h2>
+        <ul>
+            <li>Reconciliation from DA (FMH)</li> <br>
+            <br> <br>
+            <li>Scan large items from the bay</li> <br>
+            <br> <br>
+            <li>Receive on HMT</li> <br>
+             <br> <br>
+            <li>Pre sort based on Tiers</li> <br>
+             <br> <br>
+            <li>Handover to the sorting team</li> <br>
+             <br> <br>
+            <li>Escalate when shipment is not complete on pre-alert mail</li><br>
+             <br> <br>
+            <li>Follow up on aged in-transit items in queue</li><br>
+             <br><br>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Analytics Section
+<!-- <div style="padding: 0 30px 30px 30px;">
+    <h2 style="color:#ff7a00;">Live Operations Overview</h2>
+
+    <div class="analytics">
+        <div class="stat">
+            <h3>120</h3>
+            <p>Shipments Received</p>
+        </div>
+        <div class="stat">
+            <h3>98%</h3>
+            <p>Accuracy Rate</p>
+        </div>
+        <div class="stat">
+            <h3>15</h3>
+            <p>Pending Checks</p>
+        </div>
+        <div class="stat">
+            <h3>5</h3>
+            <p>Escalations</p>
+        </div>
+    </div>
+</div> --> 
+
+<section class="alert-bar">
+        <div class="alert-content">
+            <div class="alert-icon">⚠️</div>
+            <div>
+                <h3 style="color: var(--orange);">Escalation Protocol</h3>
+                <p>Escalate immediately whenever a shipment is not complete based on the pre-alert mail. Follow up on the aged in transit items on the queue daily.</p>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    © 2026 Receiving Team Dashboard
+</footer>
+
+</body>
+</html>
